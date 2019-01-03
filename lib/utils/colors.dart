@@ -1,0 +1,235 @@
+import 'package:flutter/material.dart';
+
+Color orange0 = Color(0xFFffa500);
+Color orange1 = Color(0xFFe59400);
+Color orange2 = Color(0xFFcc8400);
+Color orange3 = Color(0xFFb27300);
+Color orange4 = Color(0xFF996300);
+Color orange5 = Color(0xFF7f5200);
+Color orange6 = Color(0xFF664200);
+Color orange7 = Color(0xFF4c3100);
+Color orange8 = Color(0xFF332100);
+Color orange9 = Color(0xFF191000);
+
+Color orange01 = Color(0xFFffa500);
+Color orange02 = Color(0xFFffae19);
+Color orange03 = Color(0xFFffb732);
+Color orange04 = Color(0xFFffc04c);
+Color orange05 = Color(0xFFffc966);
+Color orange06 = Color(0xFFffd27f);
+Color orange07 = Color(0xFFffdb99);
+Color orange08 = Color(0xFFffe4b2);
+Color orange09 = Color(0xFFffedcc);
+Color orange010 = Color(0xFFfff6e5);
+
+Color yellow0 = Color(0xFFffff00);
+Color yellow1 = Color(0xFFe5e500);
+Color yellow2 = Color(0xFFcccc00);
+Color yellow3 = Color(0xFFb2b200);
+Color yellow4 = Color(0xFF999900);
+Color yellow5 = Color(0xFF7f7f00);
+Color yellow6 = Color(0xFF666600);
+Color yellow7 = Color(0xFF4c4c00);
+Color yellow8 = Color(0xFF333300);
+Color yellow9 = Color(0xFF191900);
+
+Color yellow01 = Color(0xFFffff00);
+Color yellow02 = Color(0xFFffff19);
+Color yellow03 = Color(0xFFffff32);
+Color yellow04 = Color(0xFFffff4c);
+Color yellow05 = Color(0xFFffff66);
+Color yellow06 = Color(0xFFffff7f);
+Color yellow07 = Color(0xFFffff99);
+Color yellow08 = Color(0xFFffffb2);
+Color yellow09 = Color(0xFFffffcc);
+Color yellow010 = Color(0xFFffffe5);
+
+Color red0 = Color(0xFFff0000);
+Color red1 = Color(0xFFe50000);
+Color red2 = Color(0xFFcc0000);
+Color red3 = Color(0xFFb20000);
+Color red4 = Color(0xFF990000);
+Color red5 = Color(0xFF7f0000);
+Color red6 = Color(0xFF660000);
+Color red7 = Color(0xFF4c0000);
+Color red8 = Color(0xFF330000);
+Color red9 = Color(0xFF190000);
+
+Color red00 = Color(0xFFff0000);
+Color red01 = Color(0xFFff1919);
+Color red02 = Color(0xFFff3232);
+Color red03 = Color(0xFFff4c4c);
+Color red04 = Color(0xFFff6666);
+Color red05 = Color(0xFFff7f7f);
+Color red06 = Color(0xFFff9999);
+Color red07 = Color(0xFFffb2b2);
+Color red08 = Color(0xFFffcccc);
+Color red09 = Color(0xFFffe5e5);
+
+Color dark_green0 = Color(0xFF006400);
+Color dark_green1 = Color(0xFF005a00);
+Color dark_green2 = Color(0xFF005000);
+Color dark_green3 = Color(0xFF004600);
+Color dark_green4 = Color(0xFF003c00);
+Color dark_green5 = Color(0xFF003200);
+Color dark_green6 = Color(0xFF002800);
+Color dark_green7 = Color(0xFF001e00);
+Color dark_green8 = Color(0xFF001400);
+Color dark_green9 = Color(0xFF000a00);
+Color dark_green10 = Color(0xFF000000);
+
+Color dark_green01 = Color(0xFF006400);
+Color dark_green02 = Color(0xFF197319);
+Color dark_green03 = Color(0xFF328332);
+Color dark_green04 = Color(0xFF4c924c);
+Color dark_green05 = Color(0xFF66a266);
+Color dark_green06 = Color(0xFF7fb17f);
+Color dark_green07 = Color(0xFF99c199);
+Color dark_green08 = Color(0xFFb2d0b2);
+Color dark_green09 = Color(0xFFcce0cc);
+Color dark_green010 = Color(0xFFe5efe5);
+
+Color light_green0 = Color(0xFF00ff00);
+Color light_green1 = Color(0xFF00e500);
+Color light_green2 = Color(0xFF00cc00);
+Color light_green3 = Color(0xFF00b200);
+Color light_green4 = Color(0xFF009900);
+Color light_green5 = Color(0xFF007f00);
+Color light_green6 = Color(0xFF006600);
+Color light_green7 = Color(0xFF004c00);
+Color light_green8 = Color(0xFF003300);
+Color light_green9 = Color(0xFF001900);
+Color light_green10 = Color(0xFF000000);
+
+Color light_green00 = Color(0xFF00ff00);
+Color light_green01 = Color(0xFF19ff19);
+Color light_green02 = Color(0xFF32ff32);
+Color light_green03 = Color(0xFF4cff4c);
+Color light_green04 = Color(0xFF66ff66);
+Color light_green05 = Color(0xFF7fff7f);
+Color light_green06 = Color(0xFF99ff99);
+Color light_green07 = Color(0xFFb2ffb2);
+Color light_green08 = Color(0xFFccffcc);
+Color light_green09 = Color(0xFFe5ffef);
+Color light_green010 = Color(0xFFffffff);
+
+Color pink0 = Color(0xFFff69b4);
+Color pink1 = Color(0xFFe55ea2);
+Color pink2 = Color(0xFFcc5490);
+Color pink3 = Color(0xFFb2497d);
+Color pink4 = Color(0xFF993f6c);
+Color pink5 = Color(0xFF7f345a);
+Color pink6 = Color(0xFF662a48);
+Color pink7 = Color(0xFF4c1f36);
+Color pink8 = Color(0xFF331524);
+Color pink9 = Color(0xFF190a12);
+Color pink10 = Color(0xFF000000);
+
+Color pink00 = Color(0xFFff69b4);
+Color pink01 = Color(0xFFff78bb);
+Color pink02 = Color(0xFFff87c3);
+Color pink03 = Color(0xFFff96ca);
+Color pink04 = Color(0xFFffa5d2);
+Color pink05 = Color(0xFFffb4d9);
+Color pink06 = Color(0xFFffc3e1);
+Color pink07 = Color(0xFFffd2e8);
+Color pink08 = Color(0xFFffe1f0);
+Color pink09 = Color(0xFFfff0f7);
+Color pink010 = Color(0xFFffffff);
+
+Color app_blue = Color(0xFF0072e5);
+
+Color blue0 = Color(0xFF8470ff);
+Color blue1 = Color(0xFF7664e5);
+Color blue2 = Color(0xFF6959cc);
+Color blue3 = Color(0xFF5c4eb2);
+Color blue4 = Color(0xFF4f4399);
+Color blue5 = Color(0xFF42387f);
+Color blue6 = Color(0xFF342c66);
+Color blue7 = Color(0xFF27214c);
+Color blue8 = Color(0xFF1a1633);
+Color blue9 = Color(0xFF0d0b19);
+Color blue10 = Color(0xFF000000);
+
+Color blue01 = Color(0xFF8470ff);
+Color blue02 = Color(0xFF907eff);
+Color blue03 = Color(0xFF928cff);
+Color blue04 = Color(0xFFa89aff);
+Color blue05 = Color(0xFFb5a9ff);
+Color blue06 = Color(0xFFc1b7ff);
+Color blue07 = Color(0xFFcdc5ff);
+Color blue08 = Color(0xFF08534949);
+Color blue09 = Color(0xFF08534949);
+Color blue010 = Color(0xFF0f534949);
+
+Color m_blue0 = Color(0xFF0000ff);
+Color m_blue1 = Color(0xFF0000e5);
+Color m_blue2 = Color(0xFF0000cc);
+Color m_blue3 = Color(0xFF0000b2);
+Color m_blue4 = Color(0xFF000099);
+Color m_blue5 = Color(0xFF00007f);
+Color m_blue6 = Color(0xFF000066);
+Color m_blue7 = Color(0xFF00004c);
+Color m_blue8 = Color(0xFF000033);
+Color m_blue9 = Color(0xFF000019);
+
+Color plain_blue = Color(0xFF000064);
+Color m_blue01 = Color(0xFF1919ff);
+Color m_blue02 = Color(0xFF4c4cff);
+Color m_blue03 = Color(0xFF6666ff);
+Color m_blue04 = Color(0xFF7f7fff);
+Color m_blue05 = Color(0xFF9999ff);
+Color m_blue06 = Color(0xFFb2b2ff);
+Color m_blue07 = Color(0xFFccccff);
+Color m_blue08 = Color(0xFFe5e5ff);
+
+Color azure_blue00 = Color(0xFF007fff);
+Color azure_blue01 = Color(0xFF198bff);
+Color azure_blue02 = Color(0xFF3298ff);
+Color azure_blue03 = Color(0xFF4ca5ff);
+Color azure_blue04 = Color(0xFF66b2ff);
+Color azure_blue05 = Color(0xFF7fbfff);
+Color azure_blue06 = Color(0xFF99cbff);
+Color azure_blue07 = Color(0xFFb2d8ff);
+Color azure_blue08 = Color(0xFFcce5ff);
+Color azure_blue09 = Color(0xFFe5f2ff);
+
+Color azure_blue0 = Color(0xFF007fff);
+Color azure_blue1 = Color(0xFF0072e5);
+Color azure_blue2 = Color(0xFF0065cc);
+Color azure_blue3 = Color(0xFF0058b2);
+Color azure_blue4 = Color(0xFF004c99);
+Color azure_blue5 = Color(0xFF003f7f);
+Color azure_blue6 = Color(0xFF003266);
+Color azure_blue7 = Color(0xFF00264c);
+Color azure_blue8 = Color(0xFF001933);
+Color azure_blue9 = Color(0xFF000c19);
+
+Color light_grey = Color(0xFF14000000);
+Color light_white = Color(0xFFc7ffffff);
+Color dark_grey = Color(0xFF96000000);
+
+Color brown00 = Color(0xFFa52a2a);
+Color brown01 = Color(0xFFae3f3f);
+Color brown02 = Color(0xFFb75454);
+Color brown03 = Color(0xFFc06969);
+Color brown04 = Color(0xFFc97f7f);
+Color brown05 = Color(0xFFd29494);
+Color brown06 = Color(0xFFdba9a9);
+Color brown07 = Color(0xFFe4bfbf);
+Color brown08 = Color(0xFFedd4d4);
+Color brown09 = Color(0xFF1ef6e9e9);
+Color brown010 = Color(0xFFffffff);
+
+Color brown0 = Color(0xFFa52a2a);
+Color brown1 = Color(0xFF942525);
+Color brown1b = Color(0xFFf3842121);
+Color brown2 = Color(0xFF842121);
+Color brown3 = Color(0xFF731d1d);
+Color brown4 = Color(0xFF631919);
+Color brown5 = Color(0xFF521515);
+Color brown6 = Color(0xFF421010);
+Color brown7 = Color(0xFF310c0c);
+Color brown8 = Color(0xFF210808);
+Color brown9 = Color(0xFF100404);
+Color brown10 = Color(0xFF000000);
