@@ -33,14 +33,22 @@ class ViewImagePage extends StatelessWidget {
                         children: <Widget>[
                           new Container(
                             height: 300,
-                            color: blue3.withOpacity(0.2),
+                            color: blue3,
                             child: Center(
-                              child: CachedNetworkImage(
-                                height: 300,
-                                width: MediaQuery.of(context).size.width,
-                                imageUrl: imagePath,
-                                fit: BoxFit.cover,
-                              ),
+                              child: imagePath.contains("http")
+                                  ? new CachedNetworkImage(
+                                      height: 300,
+                                      width: MediaQuery.of(context).size.width,
+                                      imageUrl: imagePath,
+                                      fit: BoxFit.cover,
+                                    )
+                                  : new Image.asset(
+                                      imagePath,
+                                      height: 200.0,
+                                      width: MediaQuery.of(context).size.width,
+                                      color: Colors.white,
+                                      alignment: Alignment.center,
+                                    ),
                             ),
                           ),
                           new Container(

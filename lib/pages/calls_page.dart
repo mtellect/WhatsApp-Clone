@@ -123,15 +123,44 @@ class _CallsPageState extends State<CallsPage> {
     String profileName = callList[index].callerName;
 
     if (imagePath == null || imagePath.isEmpty) {
-      return new CircleAvatar(
-        maxRadius: 25,
-        child: Image.asset(
-          person_image,
-          fit: BoxFit.cover,
-          color: Colors.white,
-          alignment: Alignment.center,
+      return new Hero(
+        tag: "imageHero$index",
+        child: new GestureDetector(
+          onTap: () {
+            Navigator.of(context).push(new PageRouteBuilder(
+                opaque: false,
+                pageBuilder: (BuildContext context, _, __) {
+                  return new ViewImagePage(
+                      imagePath: person_image,
+                      profileName: profileName,
+                      index: index);
+                }));
+          },
+          child: Container(
+            height: 60.0,
+            width: 50.0,
+            child: Center(
+              child: Container(
+                height: 60.0,
+                width: 50.0,
+                child: Image.asset(
+                  person_image,
+                  color: Colors.white,
+                  height: 60,
+                  width: 60,
+                  fit: BoxFit.cover,
+                ),
+                decoration: BoxDecoration(
+                  color: blue3,
+                  shape: BoxShape.circle,
+                ),
+              ),
+            ),
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+            ),
+          ),
         ),
-        backgroundColor: Colors.grey,
       );
     }
     return new Hero(
