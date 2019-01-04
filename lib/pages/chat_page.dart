@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/logic/chat_model.dart';
+import 'package:whatsapp_clone/pages/view_image_page.dart';
 import 'package:whatsapp_clone/utils/images.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
@@ -156,6 +157,7 @@ class _ChatPageState extends State<ChatPage> {
 
   Widget _buildAvatar({int index}) {
     String imagePath = chatList[index].imagePath;
+    String profileName = chatList[index].senderName;
 
     if (imagePath == null || imagePath.isEmpty) {
       return new CircleAvatar(
@@ -169,9 +171,38 @@ class _ChatPageState extends State<ChatPage> {
         backgroundColor: Colors.grey,
       );
     }
-    return new CircleAvatar(
-      maxRadius: 25,
-      backgroundImage: CachedNetworkImageProvider(imagePath),
+    return new Hero(
+      tag: "imageHero$index",
+      child: new GestureDetector(
+        onTap: () {
+          Navigator.of(context).push(new PageRouteBuilder(
+              opaque: false,
+              pageBuilder: (BuildContext context, _, __) {
+                return new ViewImagePage(
+                    imagePath: imagePath,
+                    profileName: profileName,
+                    index: index);
+              }));
+        },
+        child: Container(
+          height: 50.0,
+          width: 50.0,
+          child: Center(
+            child: Container(
+              height: 50.0,
+              width: 50.0,
+              decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  image: DecorationImage(
+                      image: CachedNetworkImageProvider(imagePath),
+                      fit: BoxFit.cover)),
+            ),
+          ),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+          ),
+        ),
+      ),
     );
   }
 }

@@ -39,6 +39,8 @@ class _StatusPageState extends State<StatusPage> {
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           subtitle: new Text("Tap to add status update"),
+          trailing:
+              new IconButton(icon: Icon(Icons.more_horiz), onPressed: () {}),
         ),
         new Container(
           color: Colors.black.withAlpha(10),
