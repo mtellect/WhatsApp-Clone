@@ -46,10 +46,34 @@ class _AppIndexState extends State<AppIndex> {
       title: new Text("WhatsApp Clone"),
       actions: <Widget>[
         new IconButton(icon: Icon(Icons.search), onPressed: () {}),
-        new IconButton(icon: Icon(Icons.more_vert), onPressed: () {}),
+        _buildPopUp()
       ],
       bottom: _buildAppTabs(),
     );
+  }
+
+  Widget _buildPopUp() {
+    return new PopupMenuButton(
+        icon: Icon(Icons.more_vert),
+        itemBuilder: (BuildContext context) => <PopupMenuItem<String>>[
+              const PopupMenuItem(value: "Newgroup", child: Text("New group")),
+              PopupMenuItem(
+                value: "New broadcast",
+                child: Text("New broadcast"),
+              ),
+              PopupMenuItem(
+                value: "WhatsApp web",
+                child: Text("WhatsApp web"),
+              ),
+              PopupMenuItem(
+                value: "Starred messages",
+                child: Text("Starred message"),
+              ),
+              PopupMenuItem(
+                value: "Setting",
+                child: Text("Setting"),
+              )
+            ]);
   }
 
   //build WhatsApp tabs
