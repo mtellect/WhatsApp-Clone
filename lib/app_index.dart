@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/pages/calls_page.dart';
 import 'package:whatsapp_clone/pages/camera_page.dart';
 import 'package:whatsapp_clone/pages/chat_page.dart';
+import 'package:whatsapp_clone/pages/select_contact.dart';
 import 'package:whatsapp_clone/pages/status_page.dart';
 import 'package:whatsapp_clone/utils/colors.dart';
 
@@ -151,7 +152,8 @@ class _AppIndexState extends State<AppIndex> {
 
   Widget _buildChatFloatingButton() {
     return new FloatingActionButton(
-      onPressed: () {},
+      onPressed: () => Navigator.push(context,
+          new MaterialPageRoute(builder: (context) => SelectContacts())),
       child: Icon(Icons.message),
     );
   }
