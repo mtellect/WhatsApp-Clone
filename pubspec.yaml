@@ -20,6 +20,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   cached_network_image: ^0.5.0+1
+  #camera:
+  flutter_search_bar:
 
 
 dev_dependencies:
@@ -44,6 +46,7 @@ flutter:
     - assets/images/outgoing_call.png
     - assets/images/incoming_call.png
     - assets/images/missed_call.png
+    - assets/images/chat_bg.jpg
 
 
   fonts:

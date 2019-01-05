@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/logic/chat_model.dart';
+import 'package:whatsapp_clone/pages/chat_screen.dart';
 import 'package:whatsapp_clone/pages/view_image_page.dart';
 import 'package:whatsapp_clone/utils/colors.dart';
 import 'package:whatsapp_clone/utils/images.dart';
@@ -40,7 +41,13 @@ class _ChatPageState extends State<ChatPage> {
   Widget _buildListItem(int index) {
     return Container(
       child: new ListTile(
-        onTap: () {},
+        onTap: () => Navigator.push(
+            context,
+            new MaterialPageRoute(
+                builder: (context) => ChatScreen(
+                      name: chatList[index].senderName,
+                      imgurl: chatList[index].imagePath,
+                    ))),
         leading: _buildAvatar(index: index),
         title: new Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
